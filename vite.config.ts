@@ -6,5 +6,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: process.env.NODE_ENV === 'production' ? '/running-schedule-planner2/' : '/',
+  base: import.meta.env.PROD ? '/running-schedule-planner2/' : '/',
 })
